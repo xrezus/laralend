@@ -91,18 +91,24 @@
                         <p class="text-muted mb-2 f-13 text-uppercase">Welcome To Site</p>
                         <h5 class="form-dark mb-4">Get 30 Days Free Trial</h5>
                     </div>
-                    <form class="registration-form">
+                    <form class="registration-form" action="{{ route('order') }}" method="post">
+
+
+                        @csrf
                         <div class="form-group mb-4">
                             <label for="exampleFormControlInput1" class="f-15">Your Name*</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="">
+                            @error('name')<small class="text-danger">{{ $message }}</small>@enderror
                         </div>
                         <div class="form-group mb-4">
                             <label for="exampleFormControlInput1" class="f-15">Your email*</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="">
+                            <input type="email" class="form-control" name="email" id="exampleFormControlInput2" placeholder="">
+                            @error('email')<small class="text-danger">{{ $message }}</small>@enderror
                         </div>
                         <div class="form-group mb-4">
                             <label for="exampleFormControlInput1" class="f-15">Password*</label>
-                            <input type="password" class="form-control" id="exampleFormControlInput3" placeholder="">
+                            <input type="password" class="form-control" name="password" id="exampleFormControlInput3" placeholder="">
+                            @error('password')<small class="text-danger">{{ $message }}</small>@enderror
                         </div>
                         <button type="submit" class="btn btn-warning btn-block btn-sm">Get Started
                             <i class="mdi mdi-telegram ml-2"></i></button>
@@ -560,7 +566,7 @@
             <div class="col-lg-7 offset-lg-1">
                 <div class="custom-form mt-4 mt-lg-0">
                     <div id="message"></div>
-                    <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                    <form method="post" action="{{ route('order') }}" name="contact-form" id="contact-form">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group app-label">
