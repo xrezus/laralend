@@ -1,0 +1,43 @@
+.lv-order-form div.lv-row{display:block;margin-bottom:8px}.lv-order-form input[type=text],.lv-order-form select,.lv-order-form textarea{display:block;width:100%;padding:5px;height:30px;border:thin solid #bfbfbf;border-radius:4px;color:inherit}.lv-order-form textarea{height:80px}.lv-order-form input[type=checkbox]{display:inline-block;margin:0 8px 0 0}.lv-order-form .lv-label span.required,.lv-order-form .lv-row-error{color:red}.lv-order-form .lv-label label{display:inline}.lv-order-form .lv-sub-label label{display:inline;color:gray}.lv-order-form .lv-order-button{display:block;padding:10px 20px;margin:0 auto}.lv-order-form-css{padding:15px;border:thin solid gray}.lv-order-form-css input[type=text],.lv-order-form-css select,.lv-order-form-css textarea{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}.lv2-form.lv2-form-validation-by-alert .lv2-form-error{display:none!important}
+
+
+.block_otz{
+	padding:30px 0;
+}
+.block_otz h3 span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background: url(../img/spec_ico.gif) no-repeat 100% 100%;
+    background-size: cover;
+    display: block;
+}
+.block_otz h3 span {
+    display: block;
+    padding: 6px 0 6px 68px;
+    position: relative;
+}
+.block_otz h3 {
+    padding-bottom:30px;
+	padding-left:15px;
+}
+.block_otz img {
+    width:200px;
+	margin:0 auto 25px;
+	border-bottom:4px solid red;
+	border-radius:15px 15px 0 0;
+}
+.block_otz p span {
+    display: block;
+    text-align:center;
+    font-weight:bold;
+	margin-bottom:15px;
+}
+@media screen and (max-width: 640px) {
+.block_otz .container div {
+    margin-bottom:30px;
+}
+}
