@@ -4,17 +4,22 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\OrderRequest;
 use App\Mail\OrderShipped;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 
 class OrderController extends Controller
 {
-    public function index(OrderRequest $request)
+    public function store(OrderRequest $request)
     {
-//        dd();
+        $order = new Order();
+        $order->name = $request->name;
+        $order->email = $request->email;
+        $order->phone = $request->phone;
+        $order->save();
 
-        Mail::to("example@gmail.com")->send(new OrderShipped($request->all()));
+        return redirect()->back()->with('status', 'Заявка успешно отправлена');
 
     }
 }

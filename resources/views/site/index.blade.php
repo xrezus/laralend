@@ -106,9 +106,9 @@
                             @error('email')<small class="text-danger">{{ $message }}</small>@enderror
                         </div>
                         <div class="form-group mb-4">
-                            <label for="exampleFormControlInput1" class="f-15">Password*</label>
-                            <input type="password" class="form-control" name="password" id="exampleFormControlInput3" placeholder="">
-                            @error('password')<small class="text-danger">{{ $message }}</small>@enderror
+                            <label for="exampleFormControlInput1" class="f-15">Phone*</label>
+                            <input type="tel" class="form-control" name="phone" id="exampleFormControlInput3" placeholder="">
+                            @error('phone')<small class="text-danger">{{ $message }}</small>@enderror
                         </div>
                         <button type="submit" class="btn btn-warning btn-block btn-sm">Get Started
                             <i class="mdi mdi-telegram ml-2"></i></button>

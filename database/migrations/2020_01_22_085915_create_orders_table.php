@@ -17,9 +17,9 @@ class CreateOrdersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
-            $table->string('password');
-            $table->integer('status');
-            $table->text('comment');
+            $table->string('phone');
+            $table->integer('status')->nullable();
+            $table->text('comment')->nullable();
             $table->timestamps();
         });
     }

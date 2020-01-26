@@ -26,7 +26,7 @@ class OrderRequest extends FormRequest
         return [
             'name' => 'required',
             'email' => 'required|email',
-            'password' => 'required|min:8',
+            'phone' => 'required',
         ];
     }
 }
