@@ -176,7 +176,7 @@
                         </ul>
                     </li>
                     <li><a href="javascript:void(0);" class="waves-effect"><i class="ti-face-smile"></i>
-                        <span>Icons <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+                            <span>Icons <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
                         <ul class="submenu">
                             <li><a href="icons-material.html">Material Design</a></li>
                             <li><a href="icons-fontawesome.html">Font Awesome</a></li>
@@ -348,7 +348,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="text-center"><p class="text-muted mb-4">This month</p><h4>
-                                                    $34,252</h4>
+                                                        $34,252</h4>
                                                     <p class="text-muted mb-5">It will be as simple as in fact it will
                                                         be occidental.</p>
                                                     <span class="peity-donut" data-peity='{ "fill": ["#02a499", "#f2f2f2"], "innerRadius": 28, "radius": 32 }' data-width="72" data-height="72">4/5</span>
@@ -356,7 +356,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="text-center"><p class="text-muted mb-4">Last month</p><h4>
-                                                    $36,253</h4>
+                                                        $36,253</h4>
                                                     <p class="text-muted mb-5">It will be as simple as in fact it will
                                                         be occidental.</p>
                                                     <span class="peity-donut" data-peity='{ "fill": ["#02a499", "#f2f2f2"], "innerRadius": 28, "radius": 32 }' data-width="72" data-height="72">3/5</span>
@@ -415,7 +415,7 @@
                         <div class="card">
                             <div class="card-body"><h4 class="mt-0 header-title mb-4">Sales Report</h4>
                                 <div class="cleafix"><p class="float-left">
-                                    <i class="mdi mdi-calendar mr-1 text-primary"></i> Jan 01 - Jan 31</p>
+                                        <i class="mdi mdi-calendar mr-1 text-primary"></i> Jan 01 - Jan 31</p>
                                     <h5 class="font-18 text-right">$4230</h5></div>
                                 <div id="ct-donut" class="ct-chart wid"></div>
                                 <div class="mt-4">

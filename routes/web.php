@@ -13,11 +13,11 @@
 
 Route::get('/', function () {
     return view('site.index');
-});
+})->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::post('/order', 'OrderController@store')->name('order');
+
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
