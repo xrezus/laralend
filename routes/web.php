@@ -19,5 +19,9 @@ Auth::routes();
 
 Route::post('/order', 'OrderController@store')->name('order');
 
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
+Route::prefix('dashboard')->group(function () {
+    Route::get('/', 'DashboardController@index')->name('dashboard');
+    Route::get('/order', 'OrderController@index')->name('order_list');
+
+});
