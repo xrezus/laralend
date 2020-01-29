@@ -14,7 +14,7 @@
                                 <th scope="col">Email</th>
                                 <th scope="col">Телефон</th>
                                 <th scope="col">Статус</th>
-                                <th scope="col">Комментарий</th>
+                                <th scope="col" colspan="2">Комментарий</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -25,7 +25,8 @@
                                     <td>{{ $order->email }}</td>
                                     <td>{{ $order->phone }}</td>
                                     <td>{{ $order->status }}<span class="badge badge-info">Не обработан</span></td>
-                                    <td>{{ $order->comment }}</td>
+                                    <td>{{ $order->comment }}<a class="btn-link" data-toggle="modal" data-target=".modal-comment" href="#">Добавить</a></td>
+                                    <td class="text-right"><div><a title="Редактировать" href="#" class="btn btn-primary btn-sm"><i class="mdi mdi-square-edit-outline"></i></a></div></td>
                                 </tr>
                             @endforeach
                             </tbody>
@@ -35,4 +36,30 @@
             </div>
         </div>
     </div><!-- end row -->
+
+    <!--  Modal content for the above example -->
+    <div class="modal fade modal-comment" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mt-0" id="myLargeModalLabel">Large modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Cras mattis consectetur purus sit amet fermentum.
+                        Cras justo odio, dapibus ac facilisis in,
+                        egestas eget quam. Morbi leo risus, porta ac
+                        consectetur ac, vestibulum at eros.</p>
+                    <p>Praesent commodo cursus magna, vel scelerisque
+                        nisl consectetur et. Vivamus sagittis lacus vel
+                        augue laoreet rutrum faucibus dolor auctor.</p>
+                    <p class="mb-0">Aenean lacinia bibendum nulla sed consectetur.
+                        Praesent commodo cursus magna, vel scelerisque
+                        nisl consectetur et. Donec sed odio dui. Donec
+                        ullamcorper nulla non metus auctor
+                        fringilla.</p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 @endsection

@@ -13,4 +13,9 @@ class DashboardController extends Controller
 
         return view('dashboard.index', compact('orders'));
     }
+
+    public function calendar(){
+        return view('dashboard.calendar');
+    }
+
 }

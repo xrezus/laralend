@@ -1,12 +1,3 @@
-
-/* 
-  Template Name: Neloz - Responsive Bootstrap 4 Landing Page Template
-   Author: Themesdesign
-   Version: 1.0.0
-   Created: Jan 2020
-   File Description: counter init file
-*/
-
 var a = 0;
 $(window).scroll(function() {
     var oTop = $('#counter').offset().top - window.innerHeight;

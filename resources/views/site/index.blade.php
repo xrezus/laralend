@@ -718,6 +718,12 @@
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <!-- Main Js -->
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
+<script>
+    jQuery(function($){
+        $("[name='phone']").mask("+7 (999) 999-99-99");
+    });
+</script>
 
 </body>
 </html>

@@ -8,6 +8,7 @@
     <meta content="Admin Dashboard" name="description">
     <meta content="Themesbrand" name="author">
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+    <link href="{{ asset('plugins/fullcalendar/css/fullcalendar.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/metismenu.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/icons.css') }}" rel="stylesheet" type="text/css">
@@ -62,10 +63,10 @@
                         <a href="{{ route('dashboard') }}" class="waves-effect{{request()->routeIs('dashboard') ? ' mm-active' : ''}}"><i class="ti-home"></i>
                             <span>Рабочий стол</span></a></li>
                     <li>
-                        <a href="{{ route('order_list') }}" class="waves-effect{{request()->routeIs('order_list') ? ' mm-active' : ''}}"><i class="ti-calendar"></i><span> Заявки</span></a>
+                        <a href="{{ route('order.index') }}" class="waves-effect{{request()->routeIs('order.index') ? ' mm-active' : ''}}"><i class="ti-clipboard"></i><span> Заявки</span></a>
                     </li>
                     <li>
-                        <a href="#" class="waves-effect"><i class="ti-calendar"></i><span> Календарь</span></a>
+                        <a href="{{ route('calendar') }}" class="waves-effect"><i class="ti-calendar"></i><span> Календарь</span></a>
                     </li>
                 </ul>
             </div><!-- Sidebar -->
@@ -95,6 +96,11 @@
 <script src="{{ asset('assets/js/metisMenu.min.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.slimscroll.js') }}"></script>
 <script src="{{ asset('assets/js/waves.min.js') }}"></script><!-- App js -->
+
+<script src="{{ asset('plugins/moment/moment.js') }}"></script>
+<script src="{{ asset('plugins/fullcalendar/js/fullcalendar.min.js') }}"></script>
+<script src="{{ asset('assets/pages/calendar-init.js') }}"></script>
+
 <script src="{{ asset('assets/js/app.js') }}"></script>
 </body>
 </html>

@@ -22,6 +22,9 @@ Route::post('/order', 'OrderController@store')->name('order');
 
 Route::prefix('dashboard')->group(function () {
     Route::get('/', 'DashboardController@index')->name('dashboard');
-    Route::get('/order', 'OrderController@index')->name('order_list');
+    Route::get('/calendar', 'DashboardController@calendar')->name('calendar');
+//    Route::get('/order', 'OrderController@index')->name('order_list');
+
+    Route::resource('order', 'OrderController');
 
 });
