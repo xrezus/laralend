@@ -7,6 +7,7 @@ use App\Mail\OrderShipped;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 
 
 class OrderController extends Controller
@@ -84,7 +85,15 @@ class OrderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $order = Order::find($id);
+        $order->status = $request->status;
+        $order->comment = $request->comment;
+        $order->save();
+
+        Session::flash('update', 'Запись успешно обновлена');
+
+        return redirect()->back();
+
     }
 
     /**

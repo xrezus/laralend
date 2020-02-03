@@ -87,7 +87,7 @@
             </div><!-- container-fluid -->
         </div><!-- content -->
         <footer class="footer">© 2019 Laralend
-            <span class="d-none d-sm-inline-block">- сделано с <i class="mdi mdi-heart text-danger"></i> в Deadline</span>.
+            <span class="d-none d-sm-inline-block">- сделано с <i class="mdi mdi-heart text-danger"></i> в Antalogic</span>.
         </footer>
     </div><!-- ============================================================== --><!-- End Right content here -->
     <!-- ============================================================== --></div><!-- END wrapper --><!-- jQuery  -->

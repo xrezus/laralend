@@ -25,9 +25,14 @@
                                     <td>{{ $order->name }}</td>
                                     <td>{{ $order->email }}</td>
                                     <td>{{ $order->phone }}</td>
-                                    <td>{{ $order->status }}<span class="badge badge-info">Не обработан</span></td>
+                                    <td>{{ $order->status }}
+
+
+                                        <span class="badge badge-info">Не обработан</span>
+
+                                    </td>
                                     <td>{{ $order->created_at->format('d.m.Y H:i:s') }}</td>
-                                    <td>{{ $order->comment }}<a class="btn-link" data-toggle="modal" data-target=".modal-comment" href="#">Добавить</a></td>
+                                    <td><div class="order__comment">{{ $order->comment }}</div></td>
                                     <td class="text-right"><div><a title="Редактировать" href="{{ route('order.show', $order->id) }}" class="btn btn-primary btn-sm"><i class="mdi mdi-square-edit-outline"></i></a></div></td>
                                 </tr>
                             @endforeach
